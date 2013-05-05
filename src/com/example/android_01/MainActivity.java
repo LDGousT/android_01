@@ -10,7 +10,6 @@ import android.widget.EditText;
 public class MainActivity extends Activity {
 	public final static String EXTRA_MESSAGE = "com.example.android_01.MESSAGE";
 
-
 	/** Called when the user clicks the Send button */
 	public void sendMessage(View view) {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
@@ -18,8 +17,9 @@ public class MainActivity extends Activity {
 		String message = editText.getText().toString();
 		intent.putExtra(EXTRA_MESSAGE, message);
 		startActivity(intent);
-	    // Do something in response to button
+		// Do something in response to button
 	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
