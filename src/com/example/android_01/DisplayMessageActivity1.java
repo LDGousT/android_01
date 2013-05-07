@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class DisplayMessageActivity extends Activity {
+public class DisplayMessageActivity1 extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,19 +19,20 @@ public class DisplayMessageActivity extends Activity {
 		// Get the message from the intent
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-		setContentView(R.layout.activity_display_message);
+		//setContentView(R.layout.activity_display_message);
 		// Show the Up button in the action bar.
 		setupActionBar();
 
 		// Create the text view
 		TextView textView = new TextView(this);
-		textView.setTextSize(40);
+		textView.setTextSize(20);
 		textView.setText(message);
 
 		// Set the text view as the activity layout
 		setContentView(textView);
 	}
 
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
@@ -41,7 +42,7 @@ public class DisplayMessageActivity extends Activity {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

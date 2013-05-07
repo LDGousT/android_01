@@ -4,8 +4,10 @@
     <string name="app_name">My app</string>
     <string name="action_settings">Settings</string>
     <string name="edit_message">Enter your message pls!</string>
-    <string name="button_send">Send</string>
+    <string name="button_send1">#1</string>
+    <string name="button_send2">#2</string>
     <string name="title_activity_display_message">My Message</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_message_activity1">Button #2 Message</string>
 
 </resources>
